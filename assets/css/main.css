@@ -1152,7 +1152,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/laptop.jpg");
+			background-image: url("../../images/space3.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1665,3 +1665,10 @@ input, select, textarea {
 		.but1 {
 			padding-left: 20%;
 		}
+		.nameid {
+
+		}		
+		.nameid2 {
+			font-size: 40px;
+			font-style: ;
+		}	
