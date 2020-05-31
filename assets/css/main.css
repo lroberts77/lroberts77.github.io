@@ -913,7 +913,7 @@ input, select, textarea {
 				text-align: center;
 				width: 2.25rem;
 			}
-
+			/* contact icons */
 				ul.icons li a:hover {
 					background-color: rgba(255, 255, 255, 0.075);
 				}
@@ -1360,10 +1360,14 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					overflow: hidden;
 				}
-
+				/* main page buttons  */
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						color: #255784;
+						background: #2196f3;
+						box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+						text
 					}
 
 					#header nav ul li a:active {
