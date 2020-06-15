@@ -1543,7 +1543,7 @@ input, select, textarea {
 			position: relative;
 			width: 60rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: #2196f359;
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1642,7 +1642,7 @@ input, select, textarea {
 		}
 
 		.copyright:hover {
-			color: #255784;
+			color: white;
 			background: #2196f3;
 			box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 		}
