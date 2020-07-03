@@ -1679,6 +1679,9 @@ input, select, textarea {
 		.but1 {
 			padding-left: 20%;
 		}
+		.txt {
+		  pointer-events: none;
+		}
 		/* .txt {
 			color: white;
 			background: black;
@@ -1725,9 +1728,5 @@ input, select, textarea {
 		}  */
 		.nameid2 {
 			font-size: 40px;
-			font-style: ;
+		  pointer-events: none;
 		}	
-
-		.pdf {
-			
-		}
