@@ -1742,3 +1742,9 @@ input, select, textarea {
 			font-size: 40px;
 		  pointer-events: none;
 		}	
+
+		.time:hover {
+			color: #2196f3;
+			text-shadow: 0 0 3px white, 0 0 5px #white;
+		}
+		

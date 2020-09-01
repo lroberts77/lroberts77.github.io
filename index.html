@@ -15,7 +15,10 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<p><span id="time"></span></p>
+							<p>
+								<span class="time" id="time"></span>
+								<span class="date" id="date"></span>
+							</p>
 							<script>
 								function startTime() {
 									var today = new Date();
@@ -34,6 +37,7 @@
 								}
 								</script>
 								<body onload="startTime()">
+								</script>	
 						</div>
 						<div class="content">
 							<div class="inner">
