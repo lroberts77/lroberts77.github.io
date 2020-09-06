@@ -1743,8 +1743,9 @@ input, select, textarea {
 		  pointer-events: none;
 		}	
 
-		.time:hover {
-			color: #2196f3;
-			text-shadow: 0 0 3px white, 0 0 5px #white;
+		.time:hover span {
+			display: none;
 		}
-		
+		.time:hover:before {
+			content: "date";
+		}
