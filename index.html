@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="startTime()">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -16,10 +16,11 @@
 					<header id="header">
 						<div class="logo">
 							<p>
-								<span class="time" id="time"></span>
+								<span class="circle" id="time"></span>
 								<!-- <span class="date" id="date"></span> -->
 							</p>
 							<script>
+
 								function startTime() {
 									var today = new Date();
 									var h = today.getHours();
@@ -35,15 +36,14 @@
 									if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
 									return i;
 								}
-
+								function getDate() {
 								n =  new Date();
 									y = n.getFullYear();
 									m = n.getMonth() + 1;
 									d = n.getDate();
 									document.getElementById("date").innerHTML = m + "/" + d + "/" + y;	
+							}
 								</script>
-								<body onload="startTime()">
-								</script>	
 						</div>
 						<div class="content">
 							<div class="inner">

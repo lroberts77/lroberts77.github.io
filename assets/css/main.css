@@ -1743,9 +1743,10 @@ input, select, textarea {
 		  pointer-events: none;
 		}	
 
-		.time:hover span {
-			display: none;
+		#time:hover {
+			opacity: 0;
 		}
-		.time:hover:before {
-			content: "date";
+		#time:hover:before {
+			opacity: 0;
 		}
+
