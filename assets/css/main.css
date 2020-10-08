@@ -1743,10 +1743,4 @@ input, select, textarea {
 		  pointer-events: none;
 		}	
 
-		#time:hover {
-			opacity: 0;
-		}
-		#time:hover:before {
-			opacity: 0;
-		}
 
