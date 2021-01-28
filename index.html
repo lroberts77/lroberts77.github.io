@@ -8,6 +8,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload" onload="startTime()">
+	<body class="is-preload" onload="getDate()">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -16,10 +17,17 @@
 					<header id="header">
 						<div class="logo">
 							<p>
-								<span class="circle" id="time"></span>
-								<!-- <span class="date" id="date"></span> -->
+								<!-- <span class="dt"></span> -->
+								<span id="time" onmouseover="changeid()"></span>
 							</p>
 							<script>
+
+								function changeid ()
+								{
+								var e = document.getElementById("time");
+								e.id = "date";
+								getDate();
+								}
 
 								function startTime() {
 									var today = new Date();
@@ -36,13 +44,14 @@
 									if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
 									return i;
 								}
+								
 								function getDate() {
 								n =  new Date();
 									y = n.getFullYear();
 									m = n.getMonth() + 1;
 									d = n.getDate();
-									document.getElementById("date").innerHTML = m + "/" + d + "/" + y;	
-							}
+									document.getElementById('date').innerHTML = m + "/" + d + "/" + y;	
+								}
 								</script>
 						</div>
 						<div class="content">
