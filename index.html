@@ -18,7 +18,7 @@
 						<div class="logo">
 							<p>
 								<!-- <span class="dt"></span> -->
-								<span id="time" onmouseover="changeid()"></span>
+								<span id="time" onmouseover="changeid()" onmouseout="changeback()"></span>
 							</p>
 							<script>
 
@@ -28,7 +28,12 @@
 								e.id = "date";
 								getDate();
 								}
-
+								function changeback ()
+								{
+								var e = document.getElementById("date");
+								e.id = "time";
+								startTime();
+								}
 								function startTime() {
 									var today = new Date();
 									var h = today.getHours();
