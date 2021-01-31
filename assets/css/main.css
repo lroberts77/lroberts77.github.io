@@ -53,6 +53,7 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	overflow: hidden;
 }
 
 mark {
@@ -1656,6 +1657,7 @@ input, select, textarea {
 			color: white;
 			background: #2196f3;
 			box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+			transition: all 1s ease;
 		}
 
 		body.is-article-visible #footer {
@@ -1742,5 +1744,123 @@ input, select, textarea {
 			font-size: 40px;
 		  pointer-events: none;
 		}	
+		.star {
+			position: absolute;
+			top: 0;
+			right: 400px;
+			transform: rotateZ(60deg);
+			z-index: 1;
+		}
+		
+		#spans {
+			width: 100px;
+			height: 2px;
+			display: block;
+			background-image: linear-gradient(to right, #fff, transparent );
+			margin: 50px;
+			margin-bottom: 150px;
+			position: relative;
+			animation: shooting 2s 4s ease-out infinite;
+			opacity: 0;
+			filter: drop-shadow(0 0 6px rgb(122, 168, 255));
+		}
+		
+		#spans::before {
+			content: "";
+			position: absolute;
+			bottom: -2px;
+			left: 0px;
+			width: 5px;
+			height: 5px;
+			background-color: #fff;
+			box-shadow: 0 0 10px #fff;
+			border-radius: 100px;
+		}
+		
+		.star:nth-child(2) {
+			right: -100px;
+			z-index: 0;
+		}
+		
+		.star:nth-child(2) #spans {
+			animation-delay: 1s;
+		}
+		/* .star:nth-child(2) {
+			right: 750px;
+			z-index: 4;
+		}
+		
+		.star:nth-child(2) #spans {
+			animation-delay: 1s;
 
+		}
+		.star:nth-child(3) {
+			right: 150px;
+			z-index: 4;
+		}
+		
+		.star:nth-child(3) #spans {
+			animation-delay: 1s;
 
+		}
+		.star:nth-child(4) {
+			right: -350px;
+			z-index: 4;
+		}
+		
+		.star:nth-child(4) #spans {
+			animation-delay: 1s;
+		}
+		.star:nth-child(5) {
+			right: 700px;
+			z-index: 4;
+		}
+		
+		.star:nth-child(5) #spans {
+			animation-delay: 1s;
+		}
+		.star:nth-child(6) {
+			right: 550px;
+			z-index: 4;
+		}
+		
+		.star:nth-child(6) #spans {
+			animation-delay: 1s;
+		}
+		.star:nth-child(7) {
+			right: 1050px;
+			z-index: 4;
+		}
+		
+		.star:nth-child(7) #spans {
+			animation-delay: 1s;
+
+		} */
+		.star:nth-child(8) {
+			right: 1000px;
+			z-index: 4;
+		}
+		
+		.star:nth-child(8) #spans {
+			animation-delay: 4.5s;
+
+		}
+		.star:nth-child(9) {
+			right: 650px;
+			z-index: 4;
+		}
+		
+		.star:nth-child(9) #spans {
+			animation-delay: 5s;
+		}
+
+		@keyframes shooting {
+			0% {
+				transform: translateY(-200px) rotate(-90deg);
+				opacity: 1;
+			}
+			100% {
+				transform: translateY(600px) rotate(-90deg);
+				opacity: 0;
+			}
+		}
