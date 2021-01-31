@@ -1760,7 +1760,7 @@ input, select, textarea {
 			margin: 50px;
 			margin-bottom: 150px;
 			position: relative;
-			animation: shooting 2s 4s ease-out infinite;
+			animation: shooting 1.7s 4s ease-out infinite;
 			opacity: 0;
 			filter: drop-shadow(0 0 6px rgb(122, 168, 255));
 		}
