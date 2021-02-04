@@ -1785,7 +1785,7 @@ input, select, textarea {
 		.star:nth-child(2) #spans {
 			animation-delay: 1s;
 		}
-		/* .star:nth-child(2) {
+		.star:nth-child(2) {
 			right: 750px;
 			z-index: 4;
 		}
@@ -1800,7 +1800,7 @@ input, select, textarea {
 		}
 		
 		.star:nth-child(3) #spans {
-			animation-delay: 1s;
+			animation-delay: 3.5s;
 
 		}
 		.star:nth-child(4) {
@@ -1809,25 +1809,25 @@ input, select, textarea {
 		}
 		
 		.star:nth-child(4) #spans {
-			animation-delay: 1s;
+			animation-delay: 5s;
 		}
 		.star:nth-child(5) {
-			right: 700px;
+			right: 1500px;
 			z-index: 4;
 		}
 		
 		.star:nth-child(5) #spans {
 			animation-delay: 1s;
 		}
-		.star:nth-child(6) {
+		/* .star:nth-child(6) {
 			right: 550px;
 			z-index: 4;
 		}
 		
 		.star:nth-child(6) #spans {
 			animation-delay: 1s;
-		}
-		.star:nth-child(7) {
+		} */
+		/* .star:nth-child(7) {
 			right: 1050px;
 			z-index: 4;
 		}
