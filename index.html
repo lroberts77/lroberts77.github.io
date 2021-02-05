@@ -23,14 +23,12 @@
 
 								function changeid ()
 								{
-								var e = document.getElementById("time");
-								e.id = "date";
+								document.getElementById("time").setAttribute("id", "date");
 								getDate();
 								}
 								function changeback ()
 								{
-								var e = document.getElementById("date");
-								e.id = "time";
+								document.getElementById("date").setAttribute("id", "time");
 								startTime();
 								}
 								function startTime() {
@@ -41,7 +39,7 @@
 									m = checkTime(m);
 									s = checkTime(s);
 									if (document.getElementById('time') == null) {
-										return
+										return 
 									} else {
 									document.getElementById('time').innerHTML =
 									h + ":" + m + ":" + s;
