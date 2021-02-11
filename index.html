@@ -21,17 +21,16 @@
 							</p>
 							<script>
 
-								function changeid ()
-								{
+								changeid = () => {
 								document.getElementById("time").setAttribute("id", "date");
 								getDate();
 								}
-								function changeback ()
-								{
+								changeback = () => {
 								document.getElementById("date").setAttribute("id", "time");
 								startTime();
 								}
-								function startTime() {
+
+								startTime = () => {
 									var today = new Date();
 									var h = today.getHours();
 									var m = today.getMinutes();
@@ -46,12 +45,12 @@
 									var t = setTimeout(startTime, 500);
 									}
 								}
-								function checkTime(i) {
+								checkTime = (i) => {
 									if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
 									return i;
 								}
 								
-								function getDate() {
+								getDate = () => {
 								n =  new Date();
 									y = n.getFullYear();
 									m = n.getMonth() + 1;
