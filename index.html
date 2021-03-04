@@ -17,15 +17,15 @@
 						<div class="logo">
 							<p>
 								<!-- <span class="dt"></span> -->
-								<span id="time" onmouseover="changeid()" onmouseout="changeback()"></span>
+								<span id="time" onmouseover="changeIdDate()" onmouseout="changeIdTime()"></span>
 							</p>
 							<script>
 
-								changeid = () => {
+								changeIdDate = () => {
 								document.getElementById("time").setAttribute("id", "date");
 								getDate();
 								}
-								changeback = () => {
+								changeIdTime = () => {
 								document.getElementById("date").setAttribute("id", "time");
 								startTime();
 								}
@@ -233,7 +233,7 @@
 	
 					<!-- Footer -->
 						<footer id="footer">
-							<p class="copyright"><a href="https://github.com/lroberts77">&copy; L.roberts designs 2021</a>
+							<p class="copyright"><a href="https://github.com/lroberts77">&copy; L.Roberts designs 2021</a>
 							</p>
 						</footer>
 	
