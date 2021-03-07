@@ -23,20 +23,18 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
-}
+	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 html {
-	overflow: hidden;
+	overflow-x: hidden;
 }
-
 body {
 	line-height: 1;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 ol, ul {
