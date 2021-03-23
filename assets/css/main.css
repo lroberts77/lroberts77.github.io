@@ -1884,6 +1884,8 @@ input, select, textarea {
 			.pdf {
 				height: 850px;
 			}
-	
+			#bg {
+				object-fit: fill;
+			}
 		}
 
