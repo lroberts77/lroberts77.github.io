@@ -1883,7 +1883,7 @@ input, select, textarea {
 				object-fit: fill;
 				width: 100vw;
 				height: 100%;
-				overflow-x: hidden;
+				overflow: hidden;
 			}
 		}
 
