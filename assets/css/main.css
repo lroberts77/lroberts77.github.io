@@ -1878,7 +1878,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.pdf {
-				height: 850px;
+				height: 900px;
 			}
 			#bg {
 				object-fit: fill;
