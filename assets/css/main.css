@@ -1646,12 +1646,28 @@ input, select, textarea {
 				overflow: hidden;
 			}
 			#footer {
-				width: 50vw !important;
+				width: 70vw !important;
+				margin-top: 0 !important;
 			}
 			.pdf {
 				scroll-behavior: smooth;
 			}
 
+			p.copyright {
+				-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.3) 30%, #000 50%, rgba(0,0,0,.3) 70%);
+				-webkit-mask-size: 200%;
+				animation: shine 2.5s infinite;
+			  }
+			  
+			  @-webkit-keyframes shine {
+				from {
+				  -webkit-mask-position: 150%;
+				}
+				
+				to {
+				  -webkit-mask-position: -50%;
+				}
+			  }
 		}
 
 /* Footer */
@@ -1667,7 +1683,8 @@ input, select, textarea {
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;
-			font-size: 0.8rem;
+			font-size: 0.7rem;
+			font-weight: bold;
 			opacity: 0.7;
 			margin-bottom: 0;
 			text-transform: uppercase;
@@ -1891,25 +1908,23 @@ input, select, textarea {
 		}
 
 		/* effect-shine */
-/* a.effect-shine:hover  */
+		p.copyright:hover{
+			-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.3) 30%, #000 50%, rgba(0,0,0,.3) 70%);
+			-webkit-mask-size: 200%;
+			animation: shine 2.5s infinite;
+		}
+		
+		@-webkit-keyframes shine {
+			from {
+			-webkit-mask-position: 150%;
+			}
+			
+			to {
+			-webkit-mask-position: -50%;
+			}
+		}
 
-p.copyright:hover{
-	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.3) 30%, #000 50%, rgba(0,0,0,.3) 70%);
-	-webkit-mask-size: 200%;
-	animation: shine 2.5s infinite;
-  }
-  
-  @-webkit-keyframes shine {
-	from {
-	  -webkit-mask-position: 150%;
-	}
-	
-	to {
-	  -webkit-mask-position: -50%;
-	}
-  }
-
-  .copyright a {
-	  color: lightgrey;
-  }
+		.copyright a {
+			color: lightgrey;
+		}
 
