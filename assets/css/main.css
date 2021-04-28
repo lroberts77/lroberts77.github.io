@@ -1636,9 +1636,6 @@ input, select, textarea {
 			#main article {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
 			}
-			.pdf {
-				height: 900px;
-			}
 			#bg {
 				object-fit: fill;
 				width: 100vw;
@@ -1651,6 +1648,7 @@ input, select, textarea {
 			}
 			.pdf {
 				scroll-behavior: smooth;
+				height: 850px !important;
 			}
 
 			p.copyright {
